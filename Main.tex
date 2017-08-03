@@ -1,0 +1,165 @@
+% Most of the latex skeleton comes from the PINGU-LoI and the DeepCore
+% Perfomance paper.
+% Notes
+%
+%
+\documentclass[12pt]{elsarticle}
+
+\RequirePackage{lineno}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[footnotesize]{caption}  % Set smaller fontsize for figure captions
+\usepackage{color}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage[dvips]{epsfig}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[percent]{overpic}
+\usepackage{rotating}
+%\usepackage{subfigure}
+\usepackage{subfiles}
+\usepackage{units}
+\usepackage{url}
+
+\usepackage{tabularx}
+\newenvironment{Tabularx}[2][1]
+  {\def\arraystretch{#1}\tabularx{#2}}
+  {\endtabularx}
+
+\newenvironment{Tabular}[2][1]
+  {\def\arraystretch{#1}\tabular{#2}}
+  {\endtabular}
+
+\newcommand{\specialcell}[1]{
+  \begin{tabular}{l}#1\end{tabular}}
+
+
+\usepackage[format=plain]{caption}
+\usepackage{subcaption}
+
+\setlength{\textwidth}{16cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+
+%\setlength{\subfigbottomskip}{0pt}
+%\setlength{\subfigtopskip}{0pt}
+
+%\setlength{\subcapsize}{\footnotesize}
+%\setlength{\subfigcapmargin}{-1.2cm}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip} % add a line between paragraphs
+
+\bibliographystyle{utphys}
+
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+
+\begin{document}
+\thispagestyle{empty}
+\input{NewCommands}
+
+\input{FrontMatter}
+
+
+\tableofcontents
+\clearpage
+
+\resetlinenumber
+\subfile{Introduction/Introduction}
+\clearpage
+
+
+\resetlinenumber
+\subfile{Physics/Physics}
+\clearpage
+
+
+\resetlinenumber
+\subfile{Detector/Detector}
+\clearpage
+
+\resetlinenumber
+\subfile{PhysicsDetectorSimulation/PhysicsDetectorSimulation}
+\clearpage
+
+\resetlinenumber
+\subfile{DataProcessing/DataProcessing}
+\clearpage
+
+\resetlinenumber
+\subfile{Reconstructions/Reconstructions}
+\clearpage
+
+
+\resetlinenumber
+\subfile{BackgroundSystematics/BackgroundSystematics}
+\clearpage
+
+\resetlinenumber
+\subfile{DataAnalysis/DataAnalysis}
+\clearpage
+
+\resetlinenumber
+\subfile{DataAnalysis/DataAnalysis}
+\clearpage
+
+\resetlinenumber
+\subfile{Results/Results}
+\clearpage
+
+\resetlinenumber
+\subfile{Outlook/Outlook}
+\clearpage
+
+%
+% Include Thanks and Acknowledgements here
+%
+\resetlinenumber
+\section{Acknowledgements}
+
+IceCube acknowledges the support from the following agencies: U.S. National
+Science Foundation-Office of Polar Programs, U.S. National Science
+Foundation-Physics Division, University of Wisconsin Alumni Research
+Foundation, the Grid Laboratory Of Wisconsin (GLOW) grid
+infrastructure at the University of Wisconsin - Madison, the Open
+Science Grid (OSG) grid infrastructure; U.S. Department of Energy, and
+National Energy Research Scientific Computing Center, the Louisiana
+Optical Network Initiative (LONI) grid computing resources; Natural
+Sciences and Engineering Research Council of Canada, WestGrid and
+Compute/Calcul Canada; Swedish Research Council, Swedish Polar
+Research Secretariat, Swedish National Infrastructure for Computing
+(SNIC), and Knut and Alice Wallenberg Foundation, Sweden; German
+Ministry for Education and Research (BMBF), Deutsche
+Forschungsgemeinschaft (DFG), Helmholtz Alliance for Astroparticle
+Physics (HAP), Research Department of Plasmas with Complex
+Interactions (Bochum), Germany; Fund for Scientific Research
+(FNRS-FWO), FWO Odysseus programme, Flanders Institute to encourage
+scientific and technological research in industry (IWT), Belgian
+Federal Science Policy Office (Belspo); University of Oxford, United
+Kingdom; Marsden Fund, New Zealand; Australian Research Council; Japan
+Society for Promotion of Science (JSPS); the Swiss National Science
+Foundation (SNSF), Switzerland; National Research Foundation of Korea
+(NRF); Danish National Research Foundation, Denmark (DNRF)
+
+%\input{Acknowledgements}
+%\clearpage
+
+%\appendix
+%\resetlinenumber
+%\subfile{Appendices/HierarchyTechniques.tex}
+
+
+\clearpage
+
+%
+% Include bibliography here
+%
+
+\resetlinenumber
+\bibliography{biblio}  
+
+
+\end{document}

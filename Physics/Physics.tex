@@ -1,0 +1,32 @@
+\documentclass[../Main.tex]{subfiles}
+
+\begin{document}
+
+\IfFileExists{NewCommands.tex}       {\input{NewCommands}}       {}
+\IfFileExists{../NewCommands.tex}    {\input{../NewCommands}}    {}
+\IfFileExists{../../NewCommands.tex} {\input{../../NewCommands}} {}
+
+
+\graphicspath{{figures/}{Physics/figures/}}
+
+
+\section{Physics topics with DeepCore}
+
+\textbf{Start with an executive summary of detector characteristics - that sets the stage for what kind of physics an be done. This should be done in 1-2 paragraphs}
+\begin{itemize}
+\item Energy threshold
+\item Resolutions (energy, direction, time of arrival)
+\item Effective area discussion (after background reduction)
+\item Main uncertainties
+\end{itemize}
+
+\subsection{Neutrino oscillations}
+
+\subsection{Atmospheric neutrino flux}
+
+\subsection{Exotic oscillation effects}
+
+\subsection{Dark matter}
+
+
+\end{document}

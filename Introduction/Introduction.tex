@@ -1,0 +1,17 @@
+\documentclass[../Main.tex]{subfiles}
+
+\begin{document}
+
+\IfFileExists{NewCommands.tex}       {\input{NewCommands}}       {}
+\IfFileExists{../NewCommands.tex}    {\input{../NewCommands}}    {}
+\IfFileExists{../../NewCommands.tex} {\input{../../NewCommands}} {}
+
+
+\graphicspath{{figures/}{Introduction/figures/}}
+
+
+\section{Introduction}
+
+
+
+\end{document}

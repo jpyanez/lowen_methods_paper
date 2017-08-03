@@ -1,0 +1,42 @@
+This is the LaTeX repository for a paper related to the methods and techniques from mostly DeepCore and low-energy physics analyses. The bulk of the latex skeleton is taken from the PINGU LoI and the DeepCore Performance paper.
+
+Comments or questions can be directed to 
+D. Jason Koskinen <koskinen@nbi.ku.dk>
+Kurt Woschnagg <kurtw@berkeley.edu>
+Ken Clark <kclark@icecube.wisc.edu>
+
+The top directory, where this README file is located, contains two .tex
+files, NewCommands.tex and Main.tex.
+
+NewCommands.tex is where you should go to put in new commands like
+
+\providecommand{\nue}{\nu_{\rm e}}
+
+so that in everyone's .tex file, instead of $\nu_e$ in one place and
+$\nu_{\rm e}$ in another, everyone uses $\nue$.  Note that we use
+\providecommand instead of \newcommand because the former works
+even if the file NewCommands.tex is loaded twice.
+
+If you want to build the entire document, run:
+
+pdflatex Main
+
+Each subdirectory contains the following:
+- a .tex file with the source latex
+- a figures/ subdirectory to house all the figures
+- .sty and .cls files for the "subfiles" package
+
+You can build a single section of the document without having to build
+the entire document (that way other people's latex errors in other sections
+will not slow you down) by running (from, e.g., the Introduction/ subdir):
+
+pdflatex Introduction
+
+This will build a pdf file for just Introduction.tex and nothing
+else.  The same file NewCommands.tex in the top directory will be \input
+regardless of which subdirectory you happen to be working in, provided
+your .tex file follows the format shown in the *_outline.tex file in each
+subdirectory.
+
+
+

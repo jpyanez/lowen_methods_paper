@@ -1,0 +1,42 @@
+\documentclass[../Main.tex]{subfiles}
+
+\begin{document}
+
+\IfFileExists{NewCommands.tex}       {\input{NewCommands}}       {}
+\IfFileExists{../NewCommands.tex}    {\input{../NewCommands}}    {}
+\IfFileExists{../../NewCommands.tex} {\input{../../NewCommands}} {}
+
+
+\graphicspath{{figures/}{Modeling/figures/}}
+
+
+\section{Backgrounds and Sytematic Uncertainties}\label{sec:BackgroundSystematics}
+
+Here we are going to write some really good words about the
+backgrounds, sysematic uncertainties, and the treatment thereof.
+
+Describe the sources of uncertainty, where the knowledge we have comes from, and how we can simulate the different situations. How they are implemented in the fit is discussed in the ``Analysis'' chapter.
+
+\subsection{Cosmic Ray Muons Background}\label{sec:CosmicRayMuons}
+
+\subsection{Bulk Ice Model}\label{sec:BulkIce}
+
+\subsection{Hole Ice}\label{sec:HoleIce}
+
+\subsection{Quantum Efficiency of the Digital Optical Modules}\label{sec:DOMEff}
+
+\subsection{Atmospheric $\nu$ Flux Spectral
+  Index}\label{sec:SpectralIndex}
+
+\subsection{Cross-Section}\label{sec:CrossSection}
+
+
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{Online_IceCube_data_processing_flow_chart.pdf}
+%\caption{\label{fig:DataFlowChart} Should we include, an obviously
+%  nicer, flow chart of data collection? More simple? Redundant because
+%it'll be in the IceCube Detector paper?}
+%\end{figure}
+
+\end{document}
